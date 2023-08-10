@@ -6,7 +6,7 @@ const router = express.Router()
 
 router.post('/', userController.create)
 router.get('/', userController.findAll)
-router.get('/findOne', userController.findOne)
+router.get('/', userController.findOne)
 router.patch('/:id',userController.update)
 router.delete('/:id', userController.delete)
 
